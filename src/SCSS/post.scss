@@ -1,0 +1,119 @@
+.post {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: 16px 0;
+  padding: 16px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    &-button {
+      background: white;
+      border: none;
+    }
+
+    & .user-avatar {
+      width: 48px;
+      height: 48px;
+      margin-right: 12px;
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-group {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &-author {
+    font-weight: 600;
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    color: $blue-8;
+    text-decoration: none;
+  }
+
+  &-time {
+    font-size: 14px;
+    line-height: 22px;
+    color: $grey-7;
+
+    &:after {
+      display: inline-block;
+      content: "";
+      width: 4px;
+      height: 4px;
+      background-color: $grey-6;
+      border-radius: 50%;
+      margin-right: 6px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+  }
+
+  &__content {
+    &-text {
+      font-size: 14px;
+      line-height: 22px;
+      color: $grey-8;
+      margin-bottom: 16px;
+      & a {
+        color: $blue-7;
+      }
+    }
+    &-image {
+      max-width: 100%;
+      border: 1px solid $grey-6;
+      border-radius: 4px;
+    }
+  }
+  &__likes {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;
+    &-counter {
+      font-size: 14px;
+      line-height: 22px;
+      color: $grey-8;
+      margin-left: 4px;
+    }
+  }
+  &__footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &:before {
+      display: flex;
+      flex-direction: column;
+      content: '';
+      width: 100%;
+      height: 1px;
+      margin-bottom: 16px;
+      background: $grey-4;
+    }
+    &-button{
+      background-color: white;
+      border: none;
+      display: flex;
+      align-items: center;
+      &-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: $grey-8;
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+
