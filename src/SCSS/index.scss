@@ -1,7 +1,10 @@
 @import "~normalize.css";
 @import "variables";
+@import "mixins";
 @import "header";
 @import "main";
+@import "adaptive";
+
 
 * {
   margin: 0;
@@ -12,4 +15,5 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 12px;
   background: $grey-3;
+  padding-top: 48px;
 }

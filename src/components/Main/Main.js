@@ -4,6 +4,7 @@ import {MainFeed} from "./MainFeed";
 import {RightSidebar} from "./RightSidebar";
 
 export const Main = () => {
+
     return (
         <div className="container">
             <LeftSidebar/>

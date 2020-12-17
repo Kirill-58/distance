@@ -5,6 +5,11 @@ export const Header = () => {
     return (
         <header className="header">
             <div className="header__block">
+                <button className="toggle-mobile-menu">
+                    <span className="line"></span>
+                    <span className="line"></span>
+                    <span className="line"></span>
+                </button>
                 <div className="search">
                     <input type="text" className="search-input" placeholder="Search"/>
                 </div>
